@@ -5,29 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28a7fa7b-b149-4316-b62c-c127b0247338" name="Changes" comment="Adicionado: ACTIVE e INACTIVE no UserType, adicionado rotas unicas para cada metodo da controller.&#10;Modificado: deixado como padrão o userType.ACTIVE na UserModel, o metodo deleteUserByID da controller se tornou inactiveUserById mudando a logica do que seria um &quot;delete&quot; mudando o UserType para INACTIVE, mudado as rotas do Insomnia.json.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/projeto/controllers/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/projeto/dtos/ProductDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/projeto/model/user/ProductModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/projeto/repositories/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/projeto/services/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Insomnia.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Insomnia.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/picpayCrud/picpayCrud/PicpayCrudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projeto/projetoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/picpayCrud/picpayCrud/controllers/TransactionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/picpayCrud/picpayCrud/controllers/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/picpayCrud/picpayCrud/dtos/NotificationDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/picpayCrud/picpayCrud/dtos/TransactionDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/picpayCrud/picpayCrud/dtos/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/picpayCrud/picpayCrud/infra/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projeto/infra/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/picpayCrud/picpayCrud/model/transaction/Transaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/picpayCrud/picpayCrud/model/user/UserModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/picpayCrud/picpayCrud/model/user/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projeto/model/user/ProductStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/picpayCrud/picpayCrud/repositories/TransactionRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/picpayCrud/picpayCrud/repositories/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/picpayCrud/picpayCrud/services/NotificationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/picpayCrud/picpayCrud/services/TransactionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/picpayCrud/picpayCrud/services/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/picpayCrud/picpayCrud/PicpayCrudApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/projeto/ProjetoChomaApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/men/testdb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/men/testdb.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projeto/dtos/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projeto/dtos/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projeto/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projeto/services/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,18 +55,28 @@
   "keyToString": {
     "Application.PicpayCrudApplication.executor": "Run",
     "Application.projetoApplication.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/temp/ws-intellij/projetoChoma1",
+    "last_opened_file_path": "/home/vzaramello/ProjetosDesenvolvimento/projetoChoma",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.projetoApplication">
+  <component name="RunManager" selected="Spring Boot.projetoApplication">
     <configuration name="PicpayCrudApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.picpayCrud.picpayCrud.PicpayCrudApplication" />
       <module name="projetoChoma" />
@@ -106,6 +99,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="projetoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="projetoChoma" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.projeto.projetoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,6 +137,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708793131439</updated>
+      <workItem from="1710543036226" duration="1338000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro commit">
       <option name="closed" value="true" />
@@ -195,6 +197,9 @@
     </task>
     <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

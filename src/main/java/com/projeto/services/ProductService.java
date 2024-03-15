@@ -40,29 +40,29 @@ public class ProductService {
     
     public ProductModel updateProduct(Long id, ProductModel newProduct) throws Exception {
         Optional<ProductModel> existingProductOptional = repository.findById(id);
-        if (existingProductOptional.isPresent()) {
-            ProductModel existingProduct = existingProductOptional.get();
-
-            if (newProduct.getName() != null) {
-                existingProduct.setName(newProduct.getName());
-            }
-            if (newProduct.getType() != null) {
-                existingProduct.setType(newProduct.getType());
-            }
-            if (newProduct.getQuantity() != null) {
-                existingProduct.setQuantity(newProduct.getQuantity());
-            }
-            if (newProduct.getSize() != null) {
-                existingProduct.setSize(newProduct.getSize());
-            }
-            if (newProduct.getProductStatus() != null) {
-                existingProduct.setProductStatus(newProduct.getProductStatus());
-            }
-
-            return repository.save(existingProduct);
-        } else {
+        if (!existingProductOptional.isPresent()) {
             throw new Exception("Produto não encontrado");
         }
+
+        ProductModel existingProduct = existingProductOptional.get();
+
+        if (newProduct.getName() != null) {
+            existingProduct.setName(newProduct.getName());
+        }
+        if (newProduct.getType() != null) {
+            existingProduct.setType(newProduct.getType());
+        }
+        if (newProduct.getQuantity() != null) {
+            existingProduct.setQuantity(newProduct.getQuantity());
+        }
+        if (newProduct.getSize() != null) {
+            existingProduct.setSize(newProduct.getSize());
+        }
+        if (newProduct.getProductStatus() != null) {
+            existingProduct.setProductStatus(newProduct.getProductStatus());
+        }
+
+        return repository.save(existingProduct);
     }
 
 

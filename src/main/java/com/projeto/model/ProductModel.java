@@ -1,4 +1,4 @@
-package com.projeto.model.user;
+package com.projeto.model;
 
 import com.projeto.dtos.ProductDTO;
 import jakarta.persistence.*;

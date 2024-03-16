@@ -1,7 +1,7 @@
 package com.projeto.services;
 
-import com.projeto.model.user.ProductModel;
-import com.projeto.model.user.ProductStatus;
+import com.projeto.model.ProductModel;
+import com.projeto.model.ProductStatus;
 import com.projeto.dtos.ProductDTO;
 import com.projeto.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;

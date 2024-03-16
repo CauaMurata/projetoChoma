@@ -1,6 +1,6 @@
 package com.projeto.controllers;
 
-import com.projeto.model.user.ProductModel;
+import com.projeto.model.ProductModel;
 import com.projeto.dtos.ProductDTO;
 import com.projeto.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;

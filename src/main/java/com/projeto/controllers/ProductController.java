@@ -1,9 +1,11 @@
 package com.projeto.controllers;
 
+
 import com.projeto.model.ProductModel;
+
 import com.projeto.dtos.ProductDTO;
+import com.projeto.model.ProductModel;
 import com.projeto.services.ProductService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,8 +15,11 @@ import java.util.List;
 @RestController()
 @RequestMapping("/products")
 public class ProductController {
-    @Autowired
-    private ProductService productService;
+    private final ProductService productService;
+
+    public ProductController(ProductService productService) {
+        this.productService = productService;
+    }
 
     @PostMapping("/create")
     public ResponseEntity<ProductModel> createProduct(@RequestBody ProductDTO product) {

@@ -1,6 +1,7 @@
 package com.projeto.dtos;
 
-import com.projeto.model.ProductStatus;
+
+import com.projeto.enums.ProductStatus;
 
 public record ProductDTO(
         String name,

@@ -1,5 +1,8 @@
 package com.projeto.controllers;
 
+
+import com.projeto.model.ProductModel;
+
 import com.projeto.dtos.ProductDTO;
 import com.projeto.model.ProductModel;
 import com.projeto.services.ProductService;

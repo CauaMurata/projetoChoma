@@ -30,6 +30,7 @@ public class ProductModel {
     private String size;
 
     @Column
+
     @Enumerated(EnumType.STRING)
     private ProductStatus productStatus;
 

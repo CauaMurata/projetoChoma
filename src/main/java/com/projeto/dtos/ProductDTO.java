@@ -1,5 +1,6 @@
 package com.projeto.dtos;
 
+
 import com.projeto.enums.ProductStatus;
 
 public record ProductDTO(

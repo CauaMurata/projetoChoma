@@ -1,6 +1,7 @@
-package com.projeto.model.user;
+package com.projeto.model;
 
 import com.projeto.dtos.ProductDTO;
+import com.projeto.enums.ProductStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -15,11 +16,20 @@ public class ProductModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column
     private String name;
+
+    @Column
     private String type;
+
+    @Column
     private Integer quantity;
+
+    @Column
     private String size;
 
+    @Column
     @Enumerated(EnumType.STRING)
     private ProductStatus productStatus;
 

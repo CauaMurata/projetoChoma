@@ -1,4 +1,4 @@
-package com.projeto.model.user;
+package com.projeto.enums;
 
 public enum ProductStatus {
     ACTIVE,

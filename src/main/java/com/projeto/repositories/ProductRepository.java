@@ -1,6 +1,6 @@
 package com.projeto.repositories;
 
-import com.projeto.model.user.ProductModel;
+import com.projeto.model.ProductModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

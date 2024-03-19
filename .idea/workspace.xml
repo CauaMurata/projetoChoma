@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28a7fa7b-b149-4316-b62c-c127b0247338" name="Changes" comment="Adicionado: ACTIVE e INACTIVE no UserType, adicionado rotas unicas para cada metodo da controller.&#10;Modificado: deixado como padrão o userType.ACTIVE na UserModel, o metodo deleteUserByID da controller se tornou inactiveUserById mudando a logica do que seria um &quot;delete&quot; mudando o UserType para INACTIVE, mudado as rotas do Insomnia.json.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/men/testdb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/men/testdb.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projeto/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projeto/controllers/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/projeto/dtos/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projeto/dtos/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projeto/model/user/ProductModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projeto/model/ProductModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projeto/model/user/ProductStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projeto/enums/ProductStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projeto/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projeto/repositories/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/projeto/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projeto/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +43,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -51,31 +54,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.PicpayCrudApplication.executor": "Run",
-    "Application.projetoApplication.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/vzaramello/ProjetosDesenvolvimento/projetoChoma",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.PicpayCrudApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.projetoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/vzaramello/ProjetosDesenvolvimento/projetoChoma&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn compile" />
+    </option>
+  </component>
   <component name="RunManager" selected="Spring Boot.projetoApplication">
     <configuration name="PicpayCrudApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.picpayCrud.picpayCrud.PicpayCrudApplication" />
@@ -137,7 +146,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708793131439</updated>
-      <workItem from="1710543036226" duration="1338000" />
+      <workItem from="1710543036226" duration="1937000" />
+      <workItem from="1710650897007" duration="3480000" />
+      <workItem from="1710688720247" duration="601000" />
+      <workItem from="1710800462286" duration="6946000" />
+      <workItem from="1710888283039" duration="233000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro commit">
       <option name="closed" value="true" />
@@ -221,16 +234,5 @@
     <MESSAGE value="Adicionando arquivo JSON da coleção do Insomnia" />
     <MESSAGE value="Adicionado: ACTIVE e INACTIVE no UserType, adicionado rotas unicas para cada metodo da controller.&#10;Modificado: deixado como padrão o userType.ACTIVE na UserModel, o metodo deleteUserByID da controller se tornou inactiveUserById mudando a logica do que seria um &quot;delete&quot; mudando o UserType para INACTIVE, mudado as rotas do Insomnia.json." />
     <option name="LAST_COMMIT_MESSAGE" value="Adicionado: ACTIVE e INACTIVE no UserType, adicionado rotas unicas para cada metodo da controller.&#10;Modificado: deixado como padrão o userType.ACTIVE na UserModel, o metodo deleteUserByID da controller se tornou inactiveUserById mudando a logica do que seria um &quot;delete&quot; mudando o UserType para INACTIVE, mudado as rotas do Insomnia.json." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/projeto/projetoApplication.java</url>
-          <line>6</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
